@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire System Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fire System Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.php">Dashboard</a></li>
+                    <li><a href="devices.php">Devices</a></li>
+                    <li><a href="alerts.php">Alerts</a></li>
+                    <li><a href="maintenance.php">Maintenance</a></li>
+                    <li><a href="reports.php?report=alerts_by_type">Reports</a></li>
+                    <li><a href="reports.php?report=alerts_by_type">Reports</a></li>
+                    <li><a href="reports.php?report=alerts_by_type">Reports</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="dashboard">
+                <h2>System Overview</h2>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h3>Total Devices</h3>
+                        <p class="stat-number">24</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Active Alerts</h3>
+                        <p class="stat-number alert">2</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Maintenance Due</h3>
+                        <p class="stat-number warning">3</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>System Status</h3>
+                        <p class="stat-text operational">Operational</p>
+                    </div>
+                </div>
+                
+                <div class="recent-alerts">
+                    <h3>Recent Alerts</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date/Time</th>
+                                <th>Device</th>
+                                <th>Location</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="critical">
+                                <td>2025-03-23 09:15:22</td>
+                                <td>Smoke Detector #12</td>
+                                <td>Building A, Floor 3</td>
+                                <td>Smoke Detection</td>
+                                <td>Critical</td>
+                            </tr>
+                            <tr class="warning">
+                                <td>2025-03-22 14:30:45</td>
+                                <td>Sprinkler #08</td>
+                                <td>Building B, Floor 1</td>
+                                <td>Low Pressure</td>
+                                <td>Warning</td>
+                            </tr>
+                            <tr>
+                                <td>2025-03-21 10:22:18</td>
+                                <td>Heat Sensor #05</td>
+                                <td>Building A, Floor 2</td>
+                                <td>Temperature Spike</td>
+                                <td>Resolved</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Fire System Management. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
